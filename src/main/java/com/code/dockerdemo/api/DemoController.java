@@ -18,8 +18,4 @@ public class DemoController {
     public ResponseEntity<String> welcome(@PathVariable String fieldName) {
         return ResponseEntity.ok("Welcome to " + fieldName);
     }
-    @GetMapping("/goodbye")
-    public ResponseEntity<String> goodbye() {
-        return ResponseEntity.ok("Goodbye");
-    }
 }
